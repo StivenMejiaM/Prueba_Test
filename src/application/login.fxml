@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="660.0" style="-fx-background-color: #D35400;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <TextField fx:id="usuario" layoutX="389.0" layoutY="77.0" prefHeight="36.0" prefWidth="219.0" promptText="Input User" style="-fx-background-color: #BFC9CA;">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <Button fx:id="btnIN" layoutX="446.0" layoutY="269.0" mnemonicParsing="false" onAction="#ingresar" prefHeight="36.0" prefWidth="105.0" text="Ingresar">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Text layoutX="463.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" wrappingWidth="70.783203125">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.7345971563981043" endY="0.31753554502369663" startX="0.5165876777251185">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="456.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" wrappingWidth="105.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="0.6018957345971564" endY="0.31753554502369663" startX="0.5165876777251185">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label fx:id="verificar" layoutX="408.0" layoutY="219.0" prefHeight="36.0" prefWidth="182.0" />
+      <ImageView fx:id="perfil" fitHeight="323.0" fitWidth="353.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@../../../../Downloads/velez.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="contraseña" layoutX="392.0" layoutY="175.0" prefHeight="36.0" prefWidth="219.0" promptText="input password" style="-fx-background-color: #BFC9CA;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </PasswordField>
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</Pane>
